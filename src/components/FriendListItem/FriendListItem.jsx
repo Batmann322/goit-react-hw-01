@@ -1,7 +1,9 @@
 import clsx from "clsx";
-import css from "./FriendProfile.module.css";
+import css from "./FriendListItem.module.css";
 
-export default function FriendProfile({ friends: { avatar, name, isOnline } }) {
+export default function FriendListItem({
+  friends: { avatar, name, isOnline },
+}) {
   const containerClsx = clsx(isOnline === true ? css.online : css.ofline);
 
   return (

@@ -1,4 +1,4 @@
-import FriendProfile from "../FriendProfile/FriendProfile";
+import FriendListItem from "../FriendListItem/FriendListItem";
 import css from "./FriendList.module.css";
 
 export default function FriendList({ friends }) {
@@ -6,7 +6,7 @@ export default function FriendList({ friends }) {
     <ul className={css.container}>
       {friends.map((friend) => (
         <li key={friend.id}>
-          <FriendProfile friends={friend} />
+          <FriendListItem friends={friend} />
         </li>
       ))}
     </ul>
